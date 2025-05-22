@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TESSA – AI Biomedical Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #5c3cfc;
+      --text-dark: #1a1a1a;
+      --text-light: #666;
+      --bg-light: #ffffff;
+      --bg-muted: #f8f9fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #e0e0ff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--text-light);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .section {
+      background: var(--bg-muted);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .section ul {
+      padding-left: 1.2rem;
+    }
+
+    .section ul li {
+      margin-bottom: 0.75rem;
+      color: var(--text-dark);
+    }
+
+    .chatbot-container {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+
+    footer {
+      background-color: var(--bg-muted);
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+  </style>
+  <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+</head>
+<body>
+  <header>
+    <h1>TESSA</h1>
+    <p>Technical Equipment Support & Service Assistant</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your AI-Powered Biomedical Tech Assistant</h2>
+      <p>
+        TESSA is your smart, instant support tool for medical equipment troubleshooting and service coordination—optimized for offices, clinics, and surgical centers.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>What Sets TESSA Apart</h3>
+      <p>
+        Combining deep biomedical knowledge with advanced AI, TESSA provides accurate troubleshooting, proactive maintenance alerts, and trusted service provider connections.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>How It Works</h3>
+      <ul>
+        <li>Describe equipment issues in natural language or upload images</li>
+        <li>Receive step-by-step repair guidance or escalation options</li>
+        <li>Connect instantly with qualified biomedical service providers</li>
+      </ul>
+    </section>
+
+    <div class="chatbot-container">
+      <zapier-interfaces-chatbot-embed is-popup='false' chatbot-id='cmaq5nzd8003c11fxv9fpsaly' height='600px' width='400px'></zapier-interfaces-chatbot-embed>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Physician’s Biomedical Equipment Services | Powered by TESSA
+  </footer>
+</body>
+</html>
