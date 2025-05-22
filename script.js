@@ -1,22 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('TESSA website loaded successfully.');
+<!-- Zapier Chatbot Embed -->
+<script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
+<zapier-interfaces-chatbot-embed
+  is-popup="false"
+  chatbot-id="cmazkbg330044l78v1wwaxfl9"
+  height="600px"
+  width="400px">
+</zapier-interfaces-chatbot-embed>
 
-  // Smooth scroll to sections
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
-  // Placeholder interaction feature for future expansion
-  const chatbot = document.querySelector('zapier-interfaces-chatbot-embed');
-  if (chatbot) {
-    chatbot.addEventListener('load', () => {
-      console.log('Chatbot loaded and ready.');
-    });
-  }
-});
